@@ -1,4 +1,4 @@
-from agents import tutor,planner,debugger,motivator,research
+from agents import tutor,planner,debugger,motivator,research,memory
 
 class PLXCore:
     def __init__(self):
@@ -21,6 +21,9 @@ class PLXCore:
         
         elif "define" in user_input:
             return research.handle(user_input)
+
+        elif "who" in user_input or "name" in user_input or "weak" in user_input:
+            return memory.handle(user_input)
 
         else:
             return self.default_response(user_input)
