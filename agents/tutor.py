@@ -8,7 +8,7 @@ model = genai.GenerativeModel('gemini-2.5-flash')
 def handle(query):
     try:
         clean_query = query.replace("explain", "").strip()
-        mode=input("choose you mode of explaimation(short mode or long mode):")
+        mode=input("choose you mode of explaination(short mode or long mode):")
         
 
         if not clean_query:
