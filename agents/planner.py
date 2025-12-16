@@ -21,12 +21,12 @@ def handle(query):
         response += "-" * 40 + "\n"
         
         for subject in subjects:
-            response += f"📚 **{subject.capitalize()}**: {time_per_subject:.1f} hours\n"
+            response += f"\N{books} **{subject.capitalize()}**: {time_per_subject:.1f} hours\n"
             response += f"   - Focus Blocks: {pomodoros} x (25m work + 5m break)\n"
             response += "\n"
             
         response += "-" * 40 + "\n"
-        response += "💡 Tip: Take a longer 15m break after every 4 blocks!"
+        response += "\N{electric light bulb} Tip: Take a longer 15m break after every 4 block!"
         
         return response
 

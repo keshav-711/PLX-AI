@@ -1,2 +1,2 @@
 def handle(query):
-    return "Motivator Agent: You can do this! (This is a placeholder)"
+    return "aukat mein reh bhadwe tera kuch nhi ho skta !!marr ja jake "
