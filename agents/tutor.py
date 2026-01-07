@@ -1,9 +1,9 @@
 import google.generativeai as genai
 
-API_KEY = "AIzaSyCUWtUx-TiixHeGUX0R59aJXIHj8ZZhz4A"
+API_KEY = "AIzaSyAgbRSsR8KakRsDgAWBvVCtoOVzmswO6o8"
 
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel('gemini-2.5-flash')
+model = genai.GenerativeModel('gemini-2.5-pro')
 
 def handle(query):
     try:
